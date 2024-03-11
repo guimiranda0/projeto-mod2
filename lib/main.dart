@@ -106,7 +106,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'O botão foi apertado:', // Modificado por Darlan
+              'O botão foi apertado:', // Modificado por Darlan Batista
               style: TextStyle(
                 color: Colors.blue,
                 fontFamily: 'Roboto',
