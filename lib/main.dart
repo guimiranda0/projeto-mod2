@@ -123,11 +123,11 @@ class _MyHomePageState extends State<MyHomePage> {
         ),
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
+       onPressed: _incrementCounter,
         tooltip: 'Increment',
-        child: const Icon(Icons.add,
-                         Colors.green),
-      ), // This trailing comma makes auto-formatting nicer for build methods.
+          child: const Icon(Icons.add, color: Colors.green), // Corrigindo aqui
+      ),
+    // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
