@@ -90,7 +90,7 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Center(
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
-        child: Row(
+        child: Column(
           // Column is also a layout widget. It takes a list of children and
           // arranges them vertically. By default, it sizes itself to fit its
           // children horizontally, and tries to be as tall as its parent.
@@ -104,30 +104,23 @@ class _MyHomePageState extends State<MyHomePage> {
           // TRY THIS: Invoke "debug painting" (choose the "Toggle Debug Paint"
           // action in the IDE, or press "p" in the console), to see the
           // wireframe for each widget.
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const Text(
-              'O botão foi apertado:', // Modificado por Darlan
-              style: TextStyle(
-                color: Colors.blue,
-                fontFamily: 'Roboto',
-                fontWeight: FontWeight.w500,
-                fontSize: 22,
-              ),
+              'You have pushed the button this many times:',
             ),
             Text(
               '$_counter',
-              style: Theme.of(context).textTheme.displayLarge,
+              style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
-       onPressed: _incrementCounter,
+        onPressed: _incrementCounter,
         tooltip: 'Increment',
-          child: const Icon(Icons.add, color: Colors.green), // Corrigindo aqui
-      ),
-    // This trailing comma makes auto-formatting nicer for build methods.
+        child: const Icon(Icons.add),
+      ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
 }
